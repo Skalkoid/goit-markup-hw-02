@@ -1,315 +1,199 @@
 :root {
-    --text-color: #757575;
-
-    --title-color: #212121;
-
-    --font-text: 14px;
-
-    --font-weight-main: 500;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --black-logo-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --white-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
 }
-
 
 body {
-    font-family: "roboto", sans-serif;
-    background: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--white-background-color);
+  color: var(--primary-text-color);
 }
 
-.header {
-    background: #FFFFFF;
+/* прибираємо крапки списків */
+.list {
+  list-style: none;
 }
+
+/* прибираємо підпреслення посилань */
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.section-title {
+ font-size: 36px;
+ line-height: 1.17;
+ text-align: center;
+ color: var(--primary-text-color);
+}
+
+.footer-contact-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* шапка */
+
+.logo-black {
+  color: var(--black-logo-color);
+}
+
+.header-nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-contact-link {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-link.current {
+  color: var(--accent-color);
+}
+
+/* ------------hero-------------- */
 
 .hero {
-    background: #2F303A;
+  background-color: var(--hero-background-color);
 }
 
-.team {
-    background: #F5F4FA;
-}
-
-.footer {
-    background: #2F303A;
-}
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-
-/*---header---*/
-.logo {
-    font-family: 'raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-}
-
-.logo-studio-header {
-    color: #000000;
-}
-
-.site-nav {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
-}
-
-.site-nav:hover{
-    color: #2196F3;
-}
-.current {
-        color: #2196F3;
-    }
-
-.site-nav:focus {
-    color: #2196F3
-}
-
-.contacts-header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-colore);
-}
-
-.contacts-header:hover {
-    color: #2196F3;
-}
-
-.contacts-header:focus {
-    color: #2196F3
-}
-
-/*---hero---*/
 .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
 }
 
-.button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    font-family: inherit;
-    cursor: pointer;
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  cursor: pointer;
 }
 
-.button-color-main {
-    color: #FFFFFF;
-    background: #2196F3
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--white-text-color);
+  color: var(--accent-color);
 }
 
-.button-color-main:hover {
-    color: var(--title-color);
-    background: #F5F4FA
+/* блок Переваги */
+.features-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
-.button-color-main:focus {
-    color: var(--title-color);
-    background: #F5F4FA
+.features-text {
+line-height: 1.71;
+  color: var(--secondary-text-color);
 }
 
-/*---main---*/
-.text-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-color);
+/* команда */
+
+.team-section {
+  background-color: var(--team-background-color);
 }
 
-.text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-colore);
-}
-
-.pre-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-}
-
-/*---team---*/
 .name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
 }
 
 .job-title {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-colore);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
 }
 
-/*---footer---*/
-.logo-studio-footer {
-    color: #FFFFFF;
+/* ----------------ПОДВАЛ----------------- */
+.footer {
+  background-color: var(--hero-background-color);
 }
 
-.address-footer {
-    font-family: "roboto";
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+.logo-white {
+  color: var(--white-text-color);
 }
 
-.address-footer:hover {
-    color: #2196F3;
+.footer-contact-link.address {
+  color: var(--white-text-color);
 }
 
-.address-footer:focus {
-    color: #2196F3;
+/* ---------------------------------------------- */
+/* --------------------ПОРТФОЛИО----------------- */
+/* ---------------------------------------------- */
+.portfolio-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background-color: var(--team-background-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
 }
 
-.contacts-footer {
-    font-family: "roboto";
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
 }
 
-.contacts-footer:hover {
-    color: #2196F3;
+.portfolio-list-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.contacts-footer:focus {
-    color: #2196F3;
+.portfolio-list-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
 }
-
-/*---portfolio---*/
-.button-color-portfolio {
-    color: var(--title-color);
-    background: #F5F4FA
-}
-
-.button-color-portfolio:hover {
-    color: #FFFFFF;
-    background: #2196F3
-}
-
-.button-color-portfolio:focus {
-    color: #FFFFFF;
-    background: #2196F3
-}
-
-.portfolio-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-}
-
-.portfolio-pre-title {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--text-colore);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header {}
-
-.logo {}
-
-.link {}
-
-.logo-header {}
-
-.site-nav {}
-
-.list {}
-
-.contacts-header {}
-
-.hero {}
-
-.hero-title {}
-
-.button {}
-
-.button-color-main {}
-
-.text-titl {}
-
-.text {}
-
-.pre-title {}
-
-.team {}
-
-.name {}
-
-.job-title {}
-
-.footer {}
-
-.logo-studio-footer {}
-
-.address-footer {}
-
-.contacts-footer {}
